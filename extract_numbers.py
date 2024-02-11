@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import pytesseract
 
-sharpened_image = cv2.imread('./image.png', flags=cv2.IMREAD_COLOR)
+sharpened_image = cv2.imread('./images/image.png', flags=cv2.IMREAD_COLOR)
 
 if sharpened_image is None:
     print("Error: Unable to load image from the specified path.")
