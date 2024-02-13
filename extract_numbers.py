@@ -15,7 +15,7 @@ else:
     custom_config = r'--psm 6 outputbase digits'
     extracted_text = pytesseract.image_to_string(threshold_image, lang='eng', config=custom_config)
 
-    output_file_path = 'text.txt'
+    output_file_path = 'numbers.txt'
     with open(output_file_path, 'a') as file:
         file.write("\n" + extracted_text.strip())  # Append extracted text on a new line
 
